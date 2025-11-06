@@ -11,46 +11,52 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+   <div class="container-fluid d-flex align-items-center justify-content-between p-2">
+  
+  <!-- Left: UMBC Logo -->
+  <a class="navbar-brand" href="#">
+    <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo" height="50">
+  </a>
+
+  <!-- Center: Search Bar -->
+  <form class="d-flex mx-3" role="search" style="flex: 1; max-width: 400px;">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-dark" type="submit">Search</button>
+  </form>
+
+  <!-- Right: Social Dropdown + MyUMBC Button -->
+  <div class="d-flex align-items-center">
+    <!-- Social Media Dropdown -->
+    <div class="dropdown me-3">
+      <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Social Media
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Facebook</a></li>
+        <li><a class="dropdown-item" href="#">Twitter</a></li>
+        <li><a class="dropdown-item" href="#">Instagram</a></li>
+        <li><a class="dropdown-item" href="#">LinkedIn</a></li>
       </ul>
     </div>
-  </div>
-</nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-9"><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- MyUMBC Button -->
+    <button class="btn btn-warning">MyUMBC</button>
   </div>
+
 </div>
-</div>
-    <div class="col-4"></div>
-    <div class="col-6"></div>
-  </div>
-</div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
