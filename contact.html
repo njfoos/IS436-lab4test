@@ -3,67 +3,117 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Contact Us - UMBC Information Systems</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .sidebar {
+        min-height: 100%;
+        border-right: 1px solid #ddd;
+      }
+      .sidebar .btn {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .contact-info p {
+        margin-bottom: 0.3rem;
+      }
+      .section-title {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .contact-btn {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    </style>
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+      <div class="container-fluid d-flex align-items-center justify-content-between p-2">
+        <a class="navbar-brand" href="#">
+          <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo" height="50">
+        </a>
 
+        <form class="d-flex mx-3" role="search" style="flex: 1; max-width: 400px;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
 
-<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
-  <div class="container-fluid d-flex align-items-center justify-content-between">
-    
-   <div class="container-fluid d-flex align-items-center justify-content-between p-2">
-  
-
-  <a class="navbar-brand" href="#">
-    <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo" height="50">
-  </a>
-
-  <form class="d-flex mx-3" role="search" style="flex: 1; max-width: 400px;">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-dark" type="submit">Search</button>
-  </form>
-
- 
-  <div class="d-flex align-items-center">
-    <div class="dropdown me-3">
-      <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Social Media
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li><a class="dropdown-item" href="#">Facebook</a></li>
-        <li><a class="dropdown-item" href="#">Twitter</a></li>
-        <li><a class="dropdown-item" href="#">Instagram</a></li>
-        <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-      </ul>
-    </div>
-
-    <button class="btn btn-warning">MyUMBC</button>
-  </div>
-
-</div>
-</nav>
-
-<div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">Department of Information Systems</h1>
+        <div class="d-flex align-items-center">
+          <div class="dropdown me-3">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Socials
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Facebook</a></li>
+              <li><a class="dropdown-item" href="#">Instagram</a></li>
+              <li><a class="dropdown-item" href="#">YouTube</a></li>
+              <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-warning">myUMBC</button>
+        </div>
       </div>
+    </nav>
 
-
-<div class="container-fluid mt-5">
-  <div class="row">
-    <!-- Sidebar with buttons -->
-    <div class="col-md-2 d-flex flex-column align-items-start border-end">
-      <a href="index.html" class="btn btn-warning w-100 mb-3">Home</a>
-      <button type="button" class="btn btn-warning w-100 mb-3">About</button>
-      <button type="button" class="btn btn-warning w-100 mb-3">Resources</button>
-      <a href="contact.html" class="btn btn-warning w-100 mb-3">Contact Us</a>
+    <!-- PAGE HEADER -->
+    <div class="text-center my-4">
+      <h2 class="fw-bold">Department of Information Systems Contact Information</h2>
     </div>
 
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR BUTTONS -->
+        <div class="col-md-2 sidebar d-flex flex-column align-items-start">
+          <a href="index.html" class="btn btn-warning">Home</a>
+          <button class="btn btn-warning">About</button>
+          <button class="btn btn-warning">Resources</button>
+          <a href="contact.html" class="btn btn-warning">Contact</a>
+        </div>
 
+        <!-- CONTACT INFO AREA -->
+        <div class="col-md-10 p-4">
+          <div class="row">
+            <!-- LOCATION & CONTACT INFO -->
+            <div class="col-md-4 contact-info">
+              <p class="section-title">Location:</p>
+              <p>ITE Building</p>
+              <p>Suite 404</p>
+              <br>
+              <p class="section-title">Phone:</p>
+              <p>Department: xxx-xxx-xxxx</p>
+              <p>School: xxx-xxx-xxxx</p>
+              <br>
+              <p class="section-title">Email:</p>
+              <p>xxxxx@umbc.edu</p>
+            </div>
 
+            <!-- SOCIAL MEDIA BUTTONS -->
+            <div class="col-md-4">
+              <p class="section-title">Social Media:</p>
+              <button class="btn btn-warning contact-btn">myUMBC</button>
+              <button class="btn btn-warning contact-btn">Instagram</button>
+              <button class="btn btn-warning contact-btn">Facebook</button>
+              <button class="btn btn-warning contact-btn">YouTube</button>
+              <button class="btn btn-warning contact-btn">LinkedIn</button>
+            </div>
 
-
-</body>
+            <!-- FACULTY LINKS -->
+            <div class="col-md-4">
+              <p class="section-title">Looking for Someone Specific:</p>
+              <button class="btn btn-warning contact-btn">Advisors</button>
+              <button class="btn btn-warning contact-btn">Full-Time Faculty</button>
+              <button class="btn btn-warning contact-btn">Part-Time Faculty</button>
+              <button class="btn btn-warning contact-btn">Special Status Faculty</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
